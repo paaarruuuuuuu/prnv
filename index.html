@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pranav</title>
     
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
+    <!-- FontAwesome (For Footer Brands) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <style>
@@ -52,20 +56,26 @@
 
     <div class="bg-glow"></div>
 
+    <!-- NAVBAR (Custom Pill Design from Image) -->
     <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-50">
         <div class="bg-zinc-900/90 backdrop-blur-xl border border-white/10 rounded-full px-2 py-2 flex items-center gap-4 shadow-2xl">
+            <!-- Logo -->
             <span class="font-bold text-white text-lg tracking-tight pl-4">P.</span>
             
+            <!-- Separator Line -->
             <div class="h-6 w-px bg-zinc-700 mx-1"></div>
             
+            <!-- Hire Me Button -->
             <a href="mailto:penguinbitwise@gmail.com" class="bg-white text-black px-5 py-2 rounded-full text-xs font-bold hover:bg-zinc-200 hover:scale-105 transition-all">
                 Hire Me
             </a>
         </div>
     </nav>
 
+    <!-- MAIN CONTENT -->
     <main class="max-w-7xl mx-auto px-6 pt-32 pb-20 relative z-10">
 
+        <!-- HEADER SECTION -->
         <div class="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div>
                 <div class="flex items-center gap-2 mb-4">
@@ -83,6 +93,7 @@
                 </p>
             </div>
             <div class="flex flex-col items-start md:items-end gap-2">
+                <!-- Time Widget -->
                 <div class="flex items-center gap-2 text-zinc-400 text-sm font-medium">
                     <i data-lucide="clock" class="w-3.5 h-3.5"></i>
                     <span id="time-display">--:-- --</span>
@@ -94,8 +105,10 @@
             </div>
         </div>
 
+        <!-- BENTO GRID -->
         <div class="grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[minmax(180px,auto)]">
             
+            <!-- 1. INTRO / HERO CARD -->
             <div class="md:col-span-2 md:row-span-2 bg-zinc-900/40 border border-white/5 backdrop-blur-md rounded-3xl p-8 flex flex-col justify-between group relative overflow-hidden hover:border-purple-500/30 transition-colors duration-300">
                 <div class="absolute top-0 right-0 p-8 opacity-20 group-hover:opacity-100 transition-opacity duration-500">
                     <i data-lucide="code-2" class="w-32 h-32 text-purple-500 rotate-12"></i>
@@ -121,6 +134,29 @@
                 </div>
             </div>
 
+            <!-- 2. VALORANT STORE (RED THEME) -->
+            <div onclick="window.open('https://discord.com', '_blank')" class="cursor-pointer md:col-span-1 md:row-span-2 bg-gradient-to-b from-red-900/20 to-zinc-900 border border-red-500/20 rounded-3xl p-6 flex flex-col justify-between group relative overflow-hidden hover:border-red-500/40 transition-colors">
+                <div class="absolute inset-0 bg-[url('https://wallpapers.com/images/hd/valorant-background-4k-v248l4k8580k8485.jpg')] bg-cover bg-center opacity-10 group-hover:opacity-20 transition-opacity mix-blend-overlay grayscale group-hover:grayscale-0"></div>
+                <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-zinc-950 to-transparent"></div>
+                
+                <div class="relative z-10 flex flex-col h-full justify-between">
+                    <div class="flex justify-between items-start">
+                        <div class="p-2 bg-red-500/10 rounded-lg text-red-400 border border-red-500/20">
+                            <i data-lucide="gamepad-2" class="w-6 h-6"></i>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="w-5 h-5 text-red-400 opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-1">Valorant Store</h3>
+                        <p class="text-xs text-zinc-400 mb-4">Operating a premium marketplace.</p>
+                        <div class="bg-red-600 text-white text-center py-2 rounded-lg font-bold text-sm shadow-lg shadow-red-500/20 hover:bg-red-500 transition-colors">
+                            Visit Store
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. BITWISE AGENCY (BLUISH THEME) -->
             <div onclick="window.open('https://bitwiselimited.github.io/', '_blank')" class="cursor-pointer md:col-span-1 md:row-span-1 bg-blue-950/30 border border-blue-500/20 rounded-3xl p-6 flex flex-col justify-between group hover:bg-blue-900/40 transition-colors">
                 <div class="flex items-center justify-between">
                     <div class="w-10 h-10 bg-sky-500/10 border border-sky-500/20 rounded-lg flex items-center justify-center text-sky-400">
@@ -137,6 +173,7 @@
                 </div>
             </div>
 
+            <!-- 4. PERSONAL / INTERESTS -->
             <div class="md:col-span-1 md:row-span-1 bg-zinc-900/50 border border-white/5 rounded-3xl p-6 flex flex-col overflow-hidden">
                 <div class="flex items-center justify-between mb-4">
                     <span class="text-xs font-bold text-zinc-500 uppercase tracking-wider">AFK Mode</span>
@@ -158,12 +195,14 @@
                 </div>
             </div>
 
+            <!-- 5. TECH STACK MARQUEE -->
             <div class="md:col-span-4 md:row-span-1 bg-zinc-900/30 border border-white/5 rounded-3xl flex items-center overflow-hidden relative h-16">
                 <div class="flex items-center px-6 h-full border-r border-white/5 bg-zinc-900/80 backdrop-blur z-10 w-32 absolute left-0">
                     <span class="text-xs font-bold text-zinc-400 uppercase tracking-widest">Stack</span>
                 </div>
                 <div class="pl-32 w-full mask-gradient">
                     <div class="animate-marquee whitespace-nowrap flex gap-8 text-zinc-400 font-medium text-sm items-center">
+                        <!-- Skills Loop (Repeated for seamless marquee) -->
                         <span class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-purple-500 rounded-full"></div> Java</span>
                         <span class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-purple-500 rounded-full"></div> React</span>
                         <span class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-purple-500 rounded-full"></div> Next.js</span>
@@ -173,22 +212,25 @@
                         <span class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-purple-500 rounded-full"></div> AWS</span>
                         <span class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-purple-500 rounded-full"></div> MySQL</span>
                         <span class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-purple-500 rounded-full"></div> Automation</span>
+                        <!-- Duplicate for Loop -->
+                        <span class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-purple-500 rounded-full"></div> Java</span>
+                        <span class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-purple-500 rounded-full"></div> React</span>
+                        <span class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-purple-500 rounded-full"></div> Next.js</span>
+                        <span class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-purple-500 rounded-full"></div> Django</span>
+                        <span class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-purple-500 rounded-full"></div> Python</span>
                     </div>
                 </div>
             </div>
 
-            <div class="md:col-span-2 md:row-span-1 bg-zinc-900/30 border border-white/5 rounded-3xl p-6 flex items-center justify-center text-zinc-500/70 text-sm">
-                <i data-lucide="sparkles" class="w-4 h-4 mr-2"></i> Space for a new card or testimonial
-            </div>
-
-
         </div>
 
+        <!-- RECENT WORKS -->
         <div id="recent-works" class="mt-32">
             <div class="flex items-center justify-between mb-12">
                 <h2 class="text-3xl font-bold flex items-center gap-3">
                     <i data-lucide="monitor" class="text-blue-500 w-8 h-8"></i> Recent Works
                 </h2>
+                <!-- Filter Buttons (Static for now) -->
                 <div class="flex gap-2">
                     <button class="px-4 py-1.5 rounded-full text-sm font-medium bg-white text-black transition-all">All</button>
                     <button class="px-4 py-1.5 rounded-full text-sm font-medium bg-zinc-900 text-zinc-500 hover:text-zinc-300 transition-all">Web</button>
@@ -197,6 +239,7 @@
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1: Flowerdale -->
                 <div onclick="window.open('http://flowerdale.vercel.app/', '_blank')" class="cursor-pointer group relative bg-zinc-900/50 rounded-3xl p-8 border border-white/5 hover:border-white/10 transition-all hover:-translate-y-2 overflow-hidden hover:bg-zinc-800/50">
                     <div class="absolute top-0 right-0 p-32 bg-pink-500/10 blur-[60px] rounded-full pointer-events-none group-hover:bg-pink-500/20 transition-colors"></div>
                     <div class="relative z-10">
@@ -217,6 +260,7 @@
                     </div>
                 </div>
 
+                <!-- Project 2: Sujis Creative -->
                 <div onclick="window.open('http://sujiscreativelab.vercel.app/', '_blank')" class="cursor-pointer group relative bg-zinc-900/50 rounded-3xl p-8 border border-white/5 hover:border-white/10 transition-all hover:-translate-y-2 overflow-hidden hover:bg-zinc-800/50">
                     <div class="absolute top-0 right-0 p-32 bg-blue-500/10 blur-[60px] rounded-full pointer-events-none group-hover:bg-blue-500/20 transition-colors"></div>
                     <div class="relative z-10">
@@ -237,6 +281,7 @@
                     </div>
                 </div>
 
+                 <!-- Project 3: BitWise -->
                  <div onclick="window.open('https://bitwiselimited.github.io/', '_blank')" class="cursor-pointer group relative bg-zinc-900/50 rounded-3xl p-8 border border-white/5 hover:border-white/10 transition-all hover:-translate-y-2 overflow-hidden hover:bg-zinc-800/50">
                     <div class="absolute top-0 right-0 p-32 bg-emerald-500/10 blur-[60px] rounded-full pointer-events-none group-hover:bg-emerald-500/20 transition-colors"></div>
                     <div class="relative z-10">
@@ -259,6 +304,7 @@
             </div>
         </div>
 
+        <!-- SERVICES -->
         <div class="mt-32 grid md:grid-cols-3 gap-12 border-t border-white/5 pt-20">
             <div class="md:col-span-1">
                 <h2 class="text-3xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-500">What I offer</h2>
@@ -270,6 +316,7 @@
                 </a>
             </div>
             <div class="md:col-span-2 grid sm:grid-cols-2 gap-4">
+                <!-- Service 1 -->
                 <div class="bg-zinc-900/30 p-6 rounded-2xl border border-white/5 hover:bg-zinc-800/50 hover:border-white/10 transition-all group">
                     <div class="bg-zinc-800/50 w-12 h-12 rounded-lg flex items-center justify-center mb-4 text-zinc-400 group-hover:text-white group-hover:scale-110 transition-all">
                         <i data-lucide="mail" class="w-6 h-6"></i>
@@ -277,6 +324,7 @@
                     <h3 class="font-bold text-lg mb-2 text-zinc-200">Email Automations</h3>
                     <p class="text-sm text-zinc-500 group-hover:text-zinc-400 transition-colors">Automated sequences to nurture leads and save time.</p>
                 </div>
+                <!-- Service 2 -->
                 <div class="bg-zinc-900/30 p-6 rounded-2xl border border-white/5 hover:bg-zinc-800/50 hover:border-white/10 transition-all group">
                     <div class="bg-zinc-800/50 w-12 h-12 rounded-lg flex items-center justify-center mb-4 text-zinc-400 group-hover:text-white group-hover:scale-110 transition-all">
                         <i data-lucide="bot" class="w-6 h-6"></i>
@@ -284,6 +332,7 @@
                     <h3 class="font-bold text-lg mb-2 text-zinc-200">Intelligent Chatbots</h3>
                     <p class="text-sm text-zinc-500 group-hover:text-zinc-400 transition-colors">Custom AI or rule-based bots for support and engagement.</p>
                 </div>
+                <!-- Service 3 -->
                 <div class="bg-zinc-900/30 p-6 rounded-2xl border border-white/5 hover:bg-zinc-800/50 hover:border-white/10 transition-all group">
                     <div class="bg-zinc-800/50 w-12 h-12 rounded-lg flex items-center justify-center mb-4 text-zinc-400 group-hover:text-white group-hover:scale-110 transition-all">
                         <i data-lucide="monitor" class="w-6 h-6"></i>
@@ -291,6 +340,7 @@
                     <h3 class="font-bold text-lg mb-2 text-zinc-200">Web Development</h3>
                     <p class="text-sm text-zinc-500 group-hover:text-zinc-400 transition-colors">High-performance websites built with React & Next.js.</p>
                 </div>
+                 <!-- Service 4 -->
                  <div class="bg-zinc-900/30 p-6 rounded-2xl border border-white/5 hover:bg-zinc-800/50 hover:border-white/10 transition-all group">
                     <div class="bg-zinc-800/50 w-12 h-12 rounded-lg flex items-center justify-center mb-4 text-zinc-400 group-hover:text-white group-hover:scale-110 transition-all">
                         <i data-lucide="zap" class="w-6 h-6"></i>
@@ -301,6 +351,7 @@
             </div>
         </div>
 
+        <!-- FOOTER -->
         <footer class="mt-40 border-t border-white/5 pt-12 pb-8">
             <div class="flex flex-col md:flex-row justify-between items-center gap-8">
                 <div class="text-center md:text-left">
@@ -309,12 +360,15 @@
                 </div>
                 
                 <div class="flex gap-8">
+                    <!-- Instagram -->
                     <a href="https://instagram.com" class="text-zinc-500 hover:text-white transition-colors">
                         <i class="fa-brands fa-instagram text-2xl"></i>
                     </a>
+                    <!-- Spotify -->
                     <a href="https://spotify.com" class="text-zinc-500 hover:text-white transition-colors">
                         <i class="fa-brands fa-spotify text-2xl"></i>
                     </a>
+                    <!-- Discord -->
                     <a href="https://discord.com" class="text-zinc-500 hover:text-white transition-colors">
                         <i class="fa-brands fa-discord text-2xl"></i>
                     </a>
@@ -328,6 +382,7 @@
 
     </main>
 
+    <!-- SCRIPTS -->
     <script>
         // Initialize Lucide Icons
         lucide.createIcons();
