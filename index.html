@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>prnv</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
-<link rel="icon" href="https://api.iconify.design/lucide:code-2.svg?color=%23ffffff" type="image/svg+xml">
+<link id="dynamic-favicon" rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⠋</text></svg>">
 <meta name="description" content="Full Stack Developer & Automation Expert based in Kerala.">
 
 <meta property="og:type" content="website">
@@ -313,9 +312,21 @@
     </main>
 
     <script src="script.js"></script>
+    <script>
+    const favicon = document.getElementById('dynamic-favicon');
+    const frames = ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏'];
+    let frameIndex = 0;
+
+    setInterval(() => {
+        const frame = frames[frameIndex];
+        favicon.href = `data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>${frame}</text></svg>`;
+        frameIndex = (frameIndex + 1) % frames.length;
+    }, 100); // Updates every 100ms
+</script>
 </body>
 
 </html>
+
 
 
 
